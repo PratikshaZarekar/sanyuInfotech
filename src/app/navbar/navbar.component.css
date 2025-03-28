@@ -1,0 +1,28 @@
+.navbar .Logo {
+    height: 40px;
+    width: 60px;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+
+}
+
+.collapse .nav-link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.collapse .nav-link:hover {
+    color: #ff6600 !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ff6600 !important;
+}
+.active-link {
+    color: #ff6600 !important; /* Change text color */
+    font-weight: bold; /* Make it bold */
+  }
+  

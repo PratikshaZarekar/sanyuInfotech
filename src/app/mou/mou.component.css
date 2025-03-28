@@ -1,0 +1,240 @@
+/*slider*/
+.carousel-item img {
+    height: 500px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    /* Ensures the images cover the space properly */
+   
+}
+
+.carousel .d-block {
+    height: 750px;
+    
+}
+
+/*Main Img*/
+.bg-header {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/assets/images/MOUMain.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+.image-container {
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  /* Reduce image size while keeping it centered */
+.img-container img {
+    width: 100%; /* Adjust the percentage as needed */
+    max-width: 200px; /* Set a max width */
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+  
+  button {
+    background-color: #fcfcfc;
+    color:#000000;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+  }
+  
+  button:hover {
+    color: white;
+    background-color: #ff4d00;
+  }
+
+/* Motion Line */
+.motion-line {
+    position: relative;
+    top: 10%;
+    left: 0;
+    width: 12px;
+    height: 4px;
+    background: rgb(240, 240, 240);
+    animation: moveLine 2s linear infinite;
+    color: #0b0b0b;
+}
+
+.center-box {
+    width: 30%;
+    margin: 0 auto 20px auto; /* Centers the div */
+    text-align: center;
+    background-color: #ff4d00;
+}
+
+@keyframes moveLine {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+    to {
+        left: 100%;
+        opacity: 1;
+    }
+}
+
+
+#list-section .btn {
+    border: 2px solid #FF6A01 !important;
+    box-shadow: none;
+    padding: 20px;
+}
+
+#list-section .btn:hover {
+    background-color: #FF6A01;
+    color: white;
+    border-color: #FF6A01;
+}
+
+
+#list-section .img-container {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically (if needed) */
+
+}
+
+
+
+
+
+
+/*Complany logo */
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    animation: scroll 10s linear infinite;
+}
+
+.logo-track img {
+    height: 50px;
+    width: auto;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Moves half way to make loop seamless */
+}
+ 
+ @keyframes moveLine {
+     from {
+         left: 0;
+         opacity: 1;
+     }
+     to {
+         left: 100%;
+         opacity: 1;
+     }
+ }
+
+
+
+ 
+ @media (max-width: 768px) {
+    /* Ensure container fits small screens */
+    .container {
+        padding: 10px;
+    }
+
+    /* Fix button layout */
+    #list-section .btn {
+        width: 100%;
+        font-size: 12px; /* Reduce font size */
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Prevent text overflow */
+        white-space: normal; /* Allow text wrapping */
+        word-break: break-word;
+
+        
+    }
+
+    
+
+    
+
+    /* Center and resize heading */
+    h3 {
+        font-size: 22px !important;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* Fix motion line under heading */
+    .center-box {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Ensure buttons take full width */
+#list-section .btn {
+    width: 100%;
+    font-size: 18px; /* Larger text */
+    padding: 20px;
+    text-align: left;
+}
+
+/* Image container with increased size */
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Make the image much larger but still smaller than text */
+.img-container img {
+    width: 90%; /* Make it take more space */
+    max-width: 500px; /* Increase max size */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ensure spacing between sections */
+#list-section .col-12 {
+    margin-bottom: 40px; /* Adjust gap between sections */
+}
+
+
+
+
+
+
+
+
+

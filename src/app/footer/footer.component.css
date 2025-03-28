@@ -1,0 +1,138 @@
+.container .row .col-lg-4 .d-flex .bi {
+    color: #ff6600 !important;
+}
+
+.container-fluid {
+    background-color: #091E3E !important;
+    max-width: 100%;
+}
+
+footer .bi {
+    font-size: 1.2rem;
+}
+
+.container .row .container-fluid {
+    background: black;
+}
+
+footer .container-fluid {
+    width: 100%;
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    .footer-about {
+      text-align: center !important;
+    }
+    .footer-about h1 {
+      font-size: 1.8rem;
+    }
+    .footer-about p {
+      font-size: 0.9rem;
+    }
+    .footer-about .logo-circle img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .footer-about .logo-circle {
+      padding: 10px;
+    }
+  
+    .footer-about a {
+      justify-content: center;
+      display: block;
+    }
+  
+    .footer-about h1 {
+      margin-top: 10px;
+    }
+  
+    .footer-about p {
+      text-align: center;
+    }
+  
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+      text-align: center !important;
+    }
+  
+    .footer-links a {
+      display: block;
+      text-align: center;
+    }
+  
+    .footer-contact div {
+      justify-content: center;
+    }
+  
+    .footer-contact p {
+      font-size: 0.9rem;
+    }
+  
+    .footer-contact .btn-square {
+      margin: 5px;
+    }
+  
+    .footer-contact .d-flex {
+      justify-content: center;
+    }
+  
+    .footer-bottom {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-about h1 {
+      font-size: 1.5rem;
+    }
+  
+    .footer-about p {
+      font-size: 0.8rem;
+    }
+  
+    .footer-contact p {
+      font-size: 0.8rem;
+    }
+  
+    .footer-links a {
+      font-size: 0.9rem;
+    }
+  
+    .footer-bottom {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-about h1 {
+      font-size: 1.3rem;
+    }
+  
+    .footer-about p {
+      font-size: 0.7rem;
+    }
+  
+    .footer-links a {
+      font-size: 0.8rem;
+    }
+  
+    .footer-contact p {
+      font-size: 0.75rem;
+    }
+  
+    .footer-contact .btn-square {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .footer-bottom {
+      font-size: 0.8rem;
+    }
+  }
+  

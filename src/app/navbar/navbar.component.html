@@ -1,0 +1,57 @@
+
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <img src="/assets/images/logo.jpeg" alt="Logo" class="Logo">
+    <a class="navbar-brand" href="#">Sanyu Infotech</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link active fw-bold" [routerLink]="['/home']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="['/about']">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="['/services']">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="['/mou']">MOU With Colleges</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="['/contact']">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+    <img src="/assets/images/logo.jpeg" alt="Logo" class="Logo" style="margin-left: 30px;">
+    <a class="navbar-brand" href="#">Sanyu Infotech</a>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()"
+      [attr.aria-controls]="'navbarNav'" [attr.aria-expanded]="!isNavbarCollapsed" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"  style="margin-right: 30px;" [ngClass]="{ 'show': !isNavbarCollapsed }" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="['/home']" routerLinkActive="active-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="['/about']" routerLinkActive="active-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="['/services']" routerLinkActive="active-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="['/mou']" routerLinkActive="active-link">MOU With Colleges</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="['/contact']" routerLinkActive="active-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+

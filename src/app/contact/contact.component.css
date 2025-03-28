@@ -1,0 +1,129 @@
+/*Main Img*/
+.bg-header {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/assets/images/Contact.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/*motion line*/
+.motion-line {
+    position: relative;
+    top: 11%;
+    left: 0;
+    width: 10px;
+    height: 4px;
+    background: rgb(247, 245, 245);
+    animation: moveLine 2s linear infinite;
+    color: #0b0b0b;
+}
+
+@keyframes moveLine {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: 100%;
+        opacity: 1;
+    }
+}
+
+
+
+/*form*/
+body {
+    background-color: #f8f9fa;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+/*Complany logo */
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    animation: scroll 10s linear infinite;
+}
+
+.logo-track img {
+    height: 50px;
+    width: auto;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Moves half way to make loop seamless */
+}
+ 
+ @keyframes moveLine {
+     from {
+         left: 0;
+         opacity: 1;
+     }
+     to {
+         left: 100%;
+         opacity: 1;
+     }
+ }
+
+ /*media query*/
+@media (max-width: 768px) {
+
+    .carousel {
+        margin-top: 70px;
+        height: 200px;
+        width: 100%;
+
+        z-index: 0;
+        /* Lower this if too high */
+
+    }
+
+    .carousel-item img {
+        margin-top: 0%;
+        object-fit: contain;
+    }
+
+    .about-img {
+        margin-top: 80px;
+        width: 90%;
+    }
+
+    #about-section {
+        margin-top: 90px;
+        /* Adjust this value */
+    }
+}
+
+
+
+
+
+
+
+
+  
+

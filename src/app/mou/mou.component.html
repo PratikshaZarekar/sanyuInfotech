@@ -1,0 +1,161 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid bg-primary py-5 bg-header mt-5" style="margin-bottom: 90px;">
+    <div class="row py-5">
+        <div class="col-12 pt-lg-5 mt-lg-5 text-center animate__animated animate__zoomIn">
+            <h1 class="display-4 text-white animated zoomIn"><strong>MOU Signed with Colleges</strong></h1>
+            <p class="h5 text-white">"We are thrilled to announce our Memorandum of Understanding with top colleges.
+                This collaboration is designed to inspire innovation, enhance learning opportunities, and foster
+                growth. Together, we are committed to enriching educational experiences and shaping a future of
+                excellence."</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container "data-aos="fade-up" data-aos-delay="300">
+
+    <h3 class="fw-bold" style="margin-top: 60px; text-align: center; font-size: 35px; margin-bottom: 50px;">List of
+        collages we have collaborated</h3>
+
+    <div class="center-box" 
+        style="width: 25%; text-align: center; margin-bottom: 60px; background-color: #ff4d00; margin-top: -28px;">
+        <div class="motion-line"> </div>
+
+
+    </div>
+    <!--List-->
+
+<!--<section id="list-section" class="bg-white text-dark text-center">
+    
+    <div class="container mx-auto">
+        <div class="row justify-content-center">
+            <div *ngFor="let item of mouList; let i = index" class="d-grid gap-2 mt-3">
+                <button class="btn d-flex justify-content-between align-items-center w-100" type="button" (click)="toggleImage(i)">
+                    <span class="text-start">{{ item.title }}</span>
+                    <i [class]="activeIndex === i ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+                </button>
+                <div class="col-lg-4 col-12 mx-auto img-container">
+                    <div class="image-container mt-3 shadow rounded" *ngIf="activeIndex === i" style="border: 2px solid #FF6A01;">
+                        <img [src]="item.image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>-
+<section id="list-section" class="bg-white text-dark text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div *ngFor="let item of mouList; let i = index" class="col-12">
+                <button class="btn d-flex justify-content-between align-items-center w-100" type="button" (click)="toggleImage(i)">
+                    <span class="text-start flex-grow-1">{{ item.title }}</span>
+                    <i [class]="activeIndex === i ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+                </button>
+                <div class="img-container mt-3 shadow rounded" *ngIf="activeIndex === i">
+                    <img [src]="item.image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="list-section" class="bg-white text-dark text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div *ngFor="let item of mouList; let i = index" class="col-12 mt-3 mb-4">
+                <!-- Clickable button 
+                <button class="btn d-flex justify-content-between align-items-center w-100" type="button" (click)="toggleImage(i)">
+                    <span class="text-start flex-grow-1">{{ item.title }}</span>
+                    <i [class]="activeIndex === i ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+                </button>
+
+                <!-- Only show the image without extra block 
+                <div class="img-container mt-3" *ngIf="activeIndex === i">
+                    <img [src]="item.image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="list-section" class="bg-white text-dark text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div *ngFor="let item of mouList; let i = index" class="col-12 mt-3 mb-4">
+                <!-- Clickable button 
+                <button class="btn d-flex justify-content-between align-items-center w-100" type="button" (click)="toggleImage(i)">
+                    <span class="text-start flex-grow-1">{{ item.title }}</span>
+                    <i [class]="activeIndex === i ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+                </button>
+
+                <!-- Image container with increased size 
+                <div class="img-container mt-3" *ngIf="activeIndex === i">
+                    <img [src]="item.image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<section id="list-section" class="bg-white text-dark text-center"  data-aos="fade-up" data-aos-delay="300">
+    <div class="container">
+        <div class="row justify-content-center" >
+            <div *ngFor="let item of mouList; let i = index" class="col-12 mt-3 mb-4">
+                <!-- Clickable button -->
+                <button class="btn d-flex justify-content-between align-items-center w-100" type="button" (click)="toggleImage(i)">
+                    <span class="text-start flex-grow-1">{{ item.title }}</span>
+                    <i [class]="activeIndex === i ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+                </button>
+
+                <!-- Larger image -->
+                <div class="img-container mt-3" *ngIf="activeIndex === i">
+                    <img [src]="item.image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    
+
+
+
+
+<div class="py-lg-6 container-fluid" style="margin-bottom: 100px; margin-top: 80px;">
+    <div class="row">
+        <div class="col-md-12">
+        </div>
+    </div>
+    <div class="row-cols-xl-7 gy-6 row">
+
+        <div class="logo-slider bg-light"  style="height: 100px;">
+                <div class="logo-track mt-3">
+                    <img src="assets/images/img_microsoft.png" alt="Microsoft">
+                    <img src="assets/images/img_tcs.png" alt="TCS">
+                    <img src="assets/images/img_scer.png" alt="SCER">
+                    <img src="assets/images/img_myntra.png" alt="Myntra">
+                    <img src="assets/images/img_oracle.png" alt="Oracle">
+                    <img src="assets/images/img_flipcart.png" alt="Flipkart">
+                    <img src="assets/images/img_google.png" alt="Google">
+
+                    <!-- Duplicate for seamless loop -->
+                    <img src="assets/images/img_google.png" alt="Google">
+                    <img src="assets/images/img_microsoft.png" alt="Microsoft">
+                    <img src="assets/images/img_tcs.png" alt="TCS">
+                    <img src="assets/images/img_scer.png" alt="SCER">
+                    <img src="assets/images/img_myntra.png" alt="Myntra">
+                    <img src="assets/images/img_oracle.png" alt="Oracle">
+                    <img src="assets/images/img_flipcart.png" alt="Flipkart">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

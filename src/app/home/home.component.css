@@ -1,0 +1,222 @@
+/*slider*/
+
+
+.carousel .d-block {
+    height: 740px;
+}
+
+.carousel-item {
+    height: 100vh; /* Ensures all slides are the same height */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the slide without extra space */
+  }
+  
+
+
+
+
+
+
+/*About*/
+.about-us {
+    padding: 50px 0;
+}
+
+.highlight {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.contact-box {
+    background: #4c0080;
+    color: white;
+     padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.contact-box i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.contact-box a {
+    color: #ffcc00;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: -80px;
+}
+
+
+.card-group .bg-white .fa {
+    color: #ff6600 !important;
+}
+
+
+
+
+
+
+
+/*services*/
+.container .jumbotron-heading {
+    color: #ff6600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.container .lead {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.row .fa-solid {
+    color: #ff6600 !important;
+
+}
+
+.card .service-icon {
+    color: #ff6600 !important;
+
+}
+
+.row .row .col-sm-6 .fa {
+    color: #ff6600 !important;
+}
+
+.row .col-md-4 .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.row .col-md-4 .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*Request a quote*/
+.row .contact-box .fa-solid {
+    color: orange !important;
+}
+
+.row .col-md-6 .img-fluid {
+    height: 500px;
+}
+
+
+
+/*Testimonial*/
+.card-deck .d-flex .far {
+    color: #ff6600 !important;
+}
+
+
+/*Complany logo */
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    animation: scroll 10s linear infinite;
+}
+
+.logo-track img {
+    height: 50px;
+    width: auto;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Moves half way to make loop seamless */
+}
+ 
+ @keyframes moveLine {
+     from {
+         left: 0;
+         opacity: 1;
+     }
+     to {
+         left: 100%;
+         opacity: 1;
+     }
+ }
+
+ /*motion line*/
+.motion-line {
+    position: relative;
+    top: 11%;
+    left: 0;
+    width: 10px;
+    height: 4px;
+    background: rgb(247, 245, 245);
+    animation: moveLine 2s linear infinite;
+    color: #0b0b0b;
+}
+
+@keyframes moveLine {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity: 1;
+        scale: 1;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+
+
+
+/* For small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    .carousel img {
+        height: 200px; /* Adjust the height for small screens */
+        object-fit: cover;
+    }
+}
+
+/* For medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    .carousel img {
+        height: 300px; /* Adjust height for tablets */
+        object-fit: cover;
+    }
+}
+
+/* For large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carousel img {
+        height: 500px; /* Set a fixed height for large screens */
+        object-fit: cover;
+    }
+}

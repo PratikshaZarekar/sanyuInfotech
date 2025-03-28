@@ -1,0 +1,183 @@
+/*Main IMG*/
+.bg-header {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/assets/images/serviceMain.jpg) center center no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+
+/*services*/
+.container .jumbotron-heading {
+    color: #ff6600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.container .lead {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.row .fa-solid {
+    color: #ff6600 !important;
+
+}
+
+.card .service-icon {
+    color: #ff6600 !important;
+
+}
+
+.row .col-md-4 .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.row .col-md-4 .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/*card*/
+.container .card-deck .card {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-deck .card:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+.card-deck .card:hover .card-title,
+.card-deck .card:hover .card-text {
+    color: white;
+}
+
+.card-deck .card:hover i {
+    color: white;
+}
+
+.container .card-deck .card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container .card-deck .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #ff6600, white);
+    transition: left 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.container .card-deck .card:hover::before {
+    left: 0;
+}
+
+.container .card-deck .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(255, 102, 0, 0.5);
+}
+
+.container .card-deck .card-body,
+.container .card-deck .card i {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.container .card-deck .card:hover .card-body,
+.container .card-deck .card:hover .card-title,
+.container .card-deck .card:hover .card-text,
+.container .card-deck .card:hover i {
+    color: white;
+}
+
+
+
+/*Training and placement*/
+.py-5 .jumbotron-heading {
+    color: #ff6600 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.py-5 .lead {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+
+
+
+
+
+/*Complany logo */
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    animation: scroll 10s linear infinite;
+}
+
+.logo-track img {
+    height: 50px;
+    width: auto;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Moves half way to make loop seamless */
+}
+ 
+ @keyframes moveLine {
+     from {
+         left: 0;
+         opacity: 1;
+     }
+     to {
+         left: 100%;
+         opacity: 1;
+     }
+ }
+ /*motion line*/
+.motion-line {
+    position: relative;
+    top: 11%;
+    left: 0;
+    width: 10px;
+    height: 4px;
+    background: rgb(247, 245, 245);
+    animation: moveLine 2s linear infinite;
+    color: #0b0b0b;
+}
+
+@keyframes moveLine {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: 100%;
+        opacity: 1;
+    }
+}
